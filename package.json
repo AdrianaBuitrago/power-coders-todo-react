@@ -2,7 +2,7 @@
   "name": "custom-hooks-project",
   "private": true,
   "version": "1.1.0",
-  "homepage": "https://AdrianaBuitrago.github.io/power-coders-todo-react/",
+  "homepage": "https://adrianabuitrago.github.io/power-coders-todo-react/",
   "type": "module",
   "scripts": {
     "dev": "vite",
