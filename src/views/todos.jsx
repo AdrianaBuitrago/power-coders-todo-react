@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import useServer from "../hooks/useServer.js"
 import Todo from "../components/Todo.jsx"
+import { Input, Button } from 'antd'
 
 function Todos() {
   const { get, post, put, delete: destroy } = useServer()
@@ -55,8 +56,9 @@ function Todos() {
     </ul> }
 
     <form onSubmit={createTodoHandler}>
-      <input type="text" name="content" value={inputValue} onChange={inputChangeHandler}/>
-      <button type="submit">Crear Todo</button>
+      {/* <input type="text" name="content" value={inputValue} onChange={inputChangeHandler}/> */}
+      <Input placeholder="Buscar..." name="content" value={inputValue} onChange={inputChangeHandler} />
+      <Button type="primary" htmlType="submit">Crear Todo</Button>
     </form>
   </>
 }
